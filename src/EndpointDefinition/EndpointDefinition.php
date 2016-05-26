@@ -2,6 +2,13 @@
 
 namespace Training\PHPUnit\ApiServiceChecker\EndpointDefinition;
 
+/**
+ * Class EndpointDefinition
+ *
+ * Defines an endpoint
+ *
+ * @package Training\PHPUnit\ApiServiceChecker\EndpointDefinition
+ */
 class EndpointDefinition
 {
     /**
@@ -26,6 +33,20 @@ class EndpointDefinition
             'structure' => []
         ]
     ];
+
+    /**
+     * EndpointDefinition constructor.
+     *
+     * @param string $endpointUrl
+     * @param array  $structure
+     */
+    public function __construct($endpointUrl, array $structure = null)
+    {
+        $this->endPointUrl = $endpointUrl;
+        if (isset($structure) && !empty($structure)) {
+            $this->structure = $structure;
+        }
+    }
 
     /**
      * @return string
