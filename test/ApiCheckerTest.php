@@ -14,5 +14,7 @@ class ApiCheckerTest extends \PHPUnit_Framework_TestCase {
         $this->apiChecker = new ApiChecker($endpointDefinitionService,$endpointCheckerService,$alertService);
     }
 
-    public function testTest(){}
+    public function testTest(){
+            
+    }
 }

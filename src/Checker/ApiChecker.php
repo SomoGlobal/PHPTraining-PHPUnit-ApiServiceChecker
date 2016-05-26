@@ -23,5 +23,6 @@ class ApiChecker{
     function checkApis()
     {
 
+           $this->endpointChecker->checkEndpoint();
     }
 }
