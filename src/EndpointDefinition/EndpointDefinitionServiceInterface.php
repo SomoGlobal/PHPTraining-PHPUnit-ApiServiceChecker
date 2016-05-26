@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\PHPUnit\ApiServiceChecker;
+namespace Training\PHPUnit\ApiServiceChecker\EndpointDefinition;
 
 interface EndpointDefinitionServiceInterface
 {
