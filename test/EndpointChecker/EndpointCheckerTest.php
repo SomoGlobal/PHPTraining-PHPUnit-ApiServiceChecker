@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\PHPUnit\ApiServiceChecker\Test;
+namespace Training\PHPUnit\ApiServiceChecker\EndPointChecker\EndpointChecker;
 
 
 class EndPointCheckerTest extends \PHPUnit_Framework_TestCase {
