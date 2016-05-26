@@ -17,7 +17,7 @@ class ApiChecker{
     ){
         $this->endpointDefinitionService = $endpointDefinitionService;
         $this->endpointChecker = $endpointChecker;
-        $this->AlertService = $alertService
+        $this->AlertService = $alertService;
     }
     
     function checkApis()

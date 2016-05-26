@@ -7,10 +7,12 @@ use Training\PHPUnit\ApiServiceChecker\Alert\Alert;
 class ApiCheckerTest extends \PHPUnit_Framework_TestCase {
 
     function setUp(){
-        $endpointCheckerService = new $this->getMockBuilder(EndpointCheckerService::class)->getMock();
-        $endpointDefinitionService = new $this->getMock(EndpointDefinitionServiceInterface::class)->getMock();
-        $alertService = new $this->getMockBuilder(AlertServiceInterface::class)->getMock();
+        $endpointCheckerService = $this->getMockBuilder(EndpointCheckerService::class)->getMock();
+        $endpointDefinitionService = $this->getMockBuilder(EndpointDefinitionServiceInterface::class)->getMock();
+        $alertService = $this->getMockBuilder(AlertServiceInterface::class)->getMock();
 
         $this->apiChecker = new ApiChecker($endpointDefinitionService,$endpointCheckerService,$alertService);
     }
+
+    public function testTest(){}
 }
