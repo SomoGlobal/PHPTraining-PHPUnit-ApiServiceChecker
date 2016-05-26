@@ -1,5 +1,7 @@
 <?php
 
+namespace Training\PHPUnit\Comms;
+
 /**
  * Created by PhpStorm.
  * User: glenn
