@@ -18,5 +18,5 @@ interface EndpointCheckerInterface
      * @param $endpointDefinition
      * @return Alert|null
      */
-    public function checkEndPoint(EndpointDefinition $endpointDefinition);
+    public function checkEndpoint(EndpointDefinition $endpointDefinition);
 }

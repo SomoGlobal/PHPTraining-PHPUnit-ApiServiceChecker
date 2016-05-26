@@ -5,7 +5,7 @@ namespace Training\PHPUnit\ApiServiceChecker\EndpointDefinition;
 interface EndpointDefinitionServiceInterface
 {
     /**
-     * @return EndpointDefinition
+     * @return EndpointDefinition[]
      */
-    public function getEndpointDefinition();
+    public function getEndpointDefinitions();
 }

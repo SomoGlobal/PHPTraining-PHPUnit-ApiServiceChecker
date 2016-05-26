@@ -2,8 +2,8 @@
 namespace Training\PHPUnit\ApiServiceChecker\Checker;
 
 use Training\PHPUnit\ApiServiceChecker\EndpointDefinition\EndpointDefinitionServiceInterface;
-use Training\PHPUnit\ApiServiceChecker\EndpointChecker;
-use Training\PHPUnit\ApiServiceChecker\AlertServiceInterface;
+use Training\PHPUnit\ApiServiceChecker\EndpointChecker\EndpointCheckerInterface;
+use Training\PHPUnit\ApiServiceChecker\Alert\AlertServiceInterface;
 
 class ApiChecker{
 
@@ -11,17 +11,18 @@ class ApiChecker{
      * ApiChecker constructor.
      */
     public function __construct(
-        EndpointDefinitionService $endpointDefinitionService,
-        EndpointChecker $endpointChecker,
-        AlertService $alertService
+        EndpointDefinitionServiceInterface $endpointDefinitionService,
+        EndpointCheckerInterface $endpointChecker,
+        AlertServiceInterface $alertService
     ){
         $this->endpointDefinitionService = $endpointDefinitionService;
         $this->endpointChecker = $endpointChecker;
-        $this->AlertService = $alertService
+        $this->AlertService = $alertService;
     }
     
     function checkApis()
     {
 
+           $this->endpointChecker->checkEndpoint();
     }
 }
