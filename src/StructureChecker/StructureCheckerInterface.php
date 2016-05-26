@@ -3,7 +3,6 @@
 namespace Training\PHPUnit\ApiServiceChecker\StructureChecker;
 
 use Training\PHPUnit\ApiServiceChecker\EndpointDefinition\EndpointDefinition;
-use Training\PHPUnit\Comms\ApiResponse;
 
 interface StructureCheckerInterface
 {
