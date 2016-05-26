@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "dealers": [
+    {
+      "name": "Victoria Audi",
+      "distance": 1.2719379588115196,
+      "dealerCode": "062",
+      "osbAvailable": true
+    },
+    {
+      "name": "Finchley Road Audi",
+      "distance": 3.6632367054528356,
+      "dealerCode": "022",
+      "osbAvailable": true
+    },
+    {
+      "name": "Jack Barclay Audi Authorised Repairer",
+      "distance": 5.0988798285472905,
+      "dealerCode": "282",
+      "osbAvailable": true
+    },
+    {
+      "name": "Wimbledon Audi",
+      "distance": 7.003547162830758,
+      "dealerCode": "262",
+      "osbAvailable": true
+    },
+    {
+      "name": "West London Audi",
+      "distance": 7.59729635659428,
+      "dealerCode": "097",
+      "osbAvailable": true
+    }
+  ],
+  "placeOptions": []
+}
