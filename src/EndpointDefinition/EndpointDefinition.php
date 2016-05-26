@@ -12,7 +12,20 @@ class EndpointDefinition
     /**
      * @var array
      */
-    private $structure;
+    private $structure = [
+        'success' => ['type' => 'boolean', 'required' => true],
+        'dealers' => ['type' => 'array','required' => true,
+            'structure' => [
+                'name' => ['type' => 'string', 'required' => true],
+                'distance' => ['type' => 'integer', 'required' => true],
+                'dealerCode' => ['type' => 'string', 'required' => true],
+                'osbAvailable' => ['type' => 'boolean', 'required' => true]
+            ]
+        ],
+        'placeOptions' => ['type' => 'array', 'required' => true,
+            'structure' => []
+        ]
+    ];
 
     /**
      * @return string
@@ -33,7 +46,7 @@ class EndpointDefinition
     /**
      * @return array
      */
-    public function getDataStructure()
+    public function getStructure()
     {
         return $this->structure;
     }
@@ -41,7 +54,7 @@ class EndpointDefinition
     /**
      * @param array $structure
      */
-    public function setDataStructure($structure)
+    public function setStructure($structure)
     {
         $this->structure = $structure;
     }
