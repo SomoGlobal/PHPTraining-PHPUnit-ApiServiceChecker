@@ -22,7 +22,9 @@ class EndpointDefinition
                 'osbAvailable' => ['type' => 'boolean', 'required' => true]
             ]
         ],
-        'placeOptions' => ['type' => 'array', 'required' => true]
+        'placeOptions' => ['type' => 'array', 'required' => true,
+            'structure' => []
+        ]
     ];
 
     /**
