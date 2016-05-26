@@ -1,6 +1,8 @@
 <?php
+
 namespace Training\PHPUnit\ApiServiceChecker;
 
-interface AlertServiceInterface{
+interface AlertServiceInterface
+{
     public function raiseAlert(Alert $alert);
 }
