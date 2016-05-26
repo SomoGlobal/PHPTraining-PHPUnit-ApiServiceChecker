@@ -2,6 +2,13 @@
 
 namespace Training\PHPUnit\ApiServiceChecker\EndpointDefinition;
 
+/**
+ * Class EndpointDefinition
+ *
+ * Defines an endpoint
+ *
+ * @package Training\PHPUnit\ApiServiceChecker\EndpointDefinition
+ */
 class EndpointDefinition
 {
     /**
@@ -12,7 +19,34 @@ class EndpointDefinition
     /**
      * @var array
      */
-    private $structure;
+    private $structure = [
+        'success' => ['type' => 'boolean', 'required' => true],
+        'dealers' => ['type' => 'array','required' => true,
+            'structure' => [
+                'name' => ['type' => 'string', 'required' => true],
+                'distance' => ['type' => 'integer', 'required' => true],
+                'dealerCode' => ['type' => 'string', 'required' => true],
+                'osbAvailable' => ['type' => 'boolean', 'required' => true]
+            ]
+        ],
+        'placeOptions' => ['type' => 'array', 'required' => true,
+            'structure' => []
+        ]
+    ];
+
+    /**
+     * EndpointDefinition constructor.
+     *
+     * @param string $endpointUrl
+     * @param array  $structure
+     */
+    public function __construct($endpointUrl, array $structure = null)
+    {
+        $this->endPointUrl = $endpointUrl;
+        if (isset($structure) && !empty($structure)) {
+            $this->structure = $structure;
+        }
+    }
 
     /**
      * @return string
@@ -33,7 +67,7 @@ class EndpointDefinition
     /**
      * @return array
      */
-    public function getDataStructure()
+    public function getStructure()
     {
         return $this->structure;
     }
@@ -41,7 +75,7 @@ class EndpointDefinition
     /**
      * @param array $structure
      */
-    public function setDataStructure($structure)
+    public function setStructure($structure)
     {
         $this->structure = $structure;
     }
