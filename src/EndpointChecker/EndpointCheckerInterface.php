@@ -1,6 +1,6 @@
 <?php
 
-namespace \Training\PHPUnit\ApiServiceChecker\EndpointChecker;
+namespace Training\PHPUnit\ApiServiceChecker\EndpointChecker;
 
 use Training\PHPUnit\ApiServiceChecker\Alert\Alert;
 use Training\PHPUnit\ApiServiceChecker\EndpointDefinition\EndpointDefinition;
@@ -12,7 +12,7 @@ use Training\PHPUnit\ApiServiceChecker\EndpointDefinition\EndpointDefinition;
  * Date: 26/05/2016
  * Time: 16:16
  */
-interface EndPointCheckerInterface
+interface EndpointCheckerInterface
 {
     /**
      * @param $endpointDefinition

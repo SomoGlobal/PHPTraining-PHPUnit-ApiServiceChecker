@@ -12,7 +12,7 @@ interface StructureCheckerInterface
      * @param EndpointDefinition $endpointDefinition
      * @param array              $actualData
      *
-     * @return array
+     * @return string[]
      */
     public function checkStructure(EndpointDefinition $endpointDefinition, array $actualData);
 }

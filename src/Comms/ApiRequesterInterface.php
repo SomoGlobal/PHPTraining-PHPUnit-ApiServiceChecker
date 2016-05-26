@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\PHPUnit\Comms;
+namespace Training\PHPUnit\ApiServiceChecker\Comms;
 
 /**
  * Created by PhpStorm.
@@ -11,8 +11,11 @@ namespace Training\PHPUnit\Comms;
 interface ApiRequesterInterface
 {
     /**
-     * @param $endPointUrl
+     * Will make request to endpoint and return ApiResponse
+     *
+     * @param string $endpointUrl
+     * @return ApiResponse
      */
-    public function getResponse($endPointUrl);
+    public function getResponse($endpointUrl);
 
 }

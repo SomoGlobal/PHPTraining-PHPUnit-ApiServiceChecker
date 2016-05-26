@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\PHPUnit\Comms;
+namespace Training\PHPUnit\ApiServiceChecker\Comms;
 
 /**
  * Created by PhpStorm.
